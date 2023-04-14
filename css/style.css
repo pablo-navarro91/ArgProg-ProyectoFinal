@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 *{
     font-family: sans-serif;
 }
@@ -5,7 +6,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 :root{
     --color-principal: #1f54a4e5;
     --color-secundario: #324157e3; 
@@ -14,15 +14,33 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 img{
     width: 5vw;
     margin: 1vw 3vw;
 }
+.btn-menu{
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    display: none;
+}
 nav{
     display: flex;
     gap: 7vh;
     margin: 1vw 3vw;
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
 }
 a{
     color: var(--color-principal)
@@ -58,6 +76,7 @@ a:hover{
     background-color: var(--color-principal);
     color: white;
 }
+
 /* ----------------------------FIN HEADER--------------------- */
 
 /* ----------------------------IMAGEN PRINCIPAL HERO--------------------- */
