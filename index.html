@@ -18,13 +18,13 @@
             <a href="">Paquetes</a>
             <a href="">Contacto</a>
             <a href=""> <button class="btn-iniciar-sesion">Iniciar sesión</button></a>
-            <a href=""><button class="btn-registrarse">Registrarse</button></a>
+            <a href="./REGISTRARSE/index.html"><button class="btn-registrarse">Registrarse</button></a>
         </nav>
     </header>
     <main>
         <section class="seccion1">
             <div class="imagen-principal">
-                <h1>El mejor viaje, <br> es el próximo</h1>
+                <h1>El mejor de los viajes <br> es el próximo</h1>
             </div>
             <div class="caja">
                 <div>
@@ -46,7 +46,7 @@
                         </div>
                     </form>
                 </div>
-            </div></div>
+            </div>
         </section>     
         <section class="seccion2">
             <div class="caja-titulo">
@@ -55,31 +55,56 @@
                 </div>
             </div>
             <div id="contenedor" class="contenedor"></div>    
-        </section> 
+        </section>
+        <section class="seccion3">
+            <div class="formularioSuscripcion">
+                <h2>Suscríbete a nuestras noticias</h2>
+                <form class="formularioContacto">
+                    <div class="inputContainer">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Mi nombre" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Mi apellido" required>
+                    </div>
+                    <div class="inputContainer"> 
+                        <label for="numero">N° de celular</label>
+                        <input type="number" id="numero" name="numero" placeholder="Mi n° de celular" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="email">Dirección de email</label>
+                        <input type="email" id="email" name="emai" placeholder="@mail.com..." required>    
+                    </div>
+                    <input type="submit" value="Suscribirme" class="btn-suscribirme">
+                </form>
+            </div>
+
+        </section>
     </main>
 
     <footer class="pie-pagina">
         <div class="grupo-1"> 
             <div class="form3">
-                <h2>Conocé nuestras promociones</h2>
-                <form action="">
-                    <input type="text" placeholder="tuemail@mail.com">
-                    <button type="submit">Suscríbete</button>
-                </form>
+                <h2>Nuestras oficinas</h2>
+                <p>Avenida SiempreViva 724, Sprinfield</p>
+                <p></p>
+                <p>Tel: +34 678 108 404 546 297 </p>
+                <p>info@ViajAndo.com</p>
             </div>
             <div class="box">
                 <h2>Links de interés</h2>
-                <p>Destinos frecuentes</p>
-                <p>Lugares por descubrir</p>
-                <p>Cancelaciones</p>
+                <a href="">Destinos frecuentes</a>
+                <a href="">Lugares por descubrir</a>
+                <a href="">Cancelaciones</a>
             </div>
             <div class="box">
                 <h2>Síguenos</h2>
                 <div class="red-social">
-                    <i class="bi bi-twitter"></i>
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-tiktok"></i>
+                    <a href="#" class="bi bi-twitter"></a>
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                    <a href="#" class="bi bi-tiktok"></a>
                 </div>
             </div>
         </div>

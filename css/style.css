@@ -8,20 +8,31 @@ body{
 }
 :root{
     --color-principal: #1f54a4e5;
-    --color-secundario: #324157e3; 
+    --color-primario:#141e5bd2;
+    --color-secundario:#87cefa8a;
+    --color-terciario:#3f83b7;
+    --color-cuarto:#c3d5db;
+    --color-quinto:#e0eff2;
 }
+
+
 /* ----------------------------HEADER----------------------- */
+
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: none;
+    padding: 1vh 5vw;
+    border-radius: 10px;
+    height: 7vh;
 }
 img{
-    width: 5vw;
-    margin: 1vw 3vw;
+    width: 4vw;
 }
 .btn-menu{
-    background-color: white;
+    background-color: var(--color-quinto);
     border: none;
     width: 30px;
     height: 30px;
@@ -30,8 +41,8 @@ img{
 }
 nav{
     display: flex;
-    gap: 7vh;
-    margin: 1vw 3vw;
+    align-items: center;
+    gap: 5vh;
 }
 
 @media screen and (max-width: 800px){
@@ -43,15 +54,16 @@ nav{
     }
 }
 a{
-    color: var(--color-principal)
+    color: var(--color-principal);
+    text-decoration: none;
 }
 a:hover{
     color: white;
 }
 .btn-iniciar-sesion{
     background-color: transparent;
-    border: var(--color-secundario) 1px solid;
-    color: var(--color-secundario);
+    border: var(--color-principal) 2px solid;
+    color: var(--color-principal);
     border-radius: 14px;
     width: 7vw;
     height: 4vh;
@@ -64,8 +76,8 @@ a:hover{
 }
 .btn-registrarse{
     background-color: transparent;
-    border: var(--color-secundario) 1px solid;
-    color: var(--color-secundario);
+    border: var(--color-principal) 2px solid;
+    color: var(--color-principal);
     border-radius: 14px;
     width: 7vw;
     height: 4vh;
@@ -77,18 +89,12 @@ a:hover{
     color: white;
 }
 
+
+
 /* ----------------------------FIN HEADER--------------------- */
-
-/* ----------------------------IMAGEN PRINCIPAL HERO--------------------- */
-
-
-
-
-
-
-/* ----------------------------FIN IMAGEN PRINCIPAL--------------------- */
-
 /* ----------------------------FORMULARIO--------------------- */
+
+
 .seccion1{
     display: flex;
     flex-direction: row;
@@ -111,7 +117,7 @@ a:hover{
 }
 h1{
     display: flex;
-    font-size: 25px;
+    font-size: 40px;
     color: var(--color-principal);
     animation-name: left-to-right;
     animation-duration: 2s;
@@ -123,9 +129,9 @@ h1:hover{
 .caja{
     display: flex;
     justify-content: center;
-    background-color: #1f54a49f;
-    width: 50vw;
-    height: 60%;
+    background-color: #141d5b96;
+    width: 40vw;
+    height: 70%;
     border-radius: 14px;
     flex-direction: column;
     align-items: center;
@@ -139,20 +145,21 @@ h1:hover{
     color: #F7F7F7;
     text-shadow: 0 0 5px black;
 } 
-.form1{
+.caja .contenedorForm .formularioUsuario .form1{
     display: flex;
     align-items: center;
     justify-content:center;
-    margin: 5vh 3vw;
+    margin: 5vh 1vw;
     gap: 3%;
-} .form2{
+} 
+.caja .form2{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3vw;
-    margin: 8vh 3vw; 
+    margin: 5vh 1vw;
 }
-input{
+.caja input{
     display: flex;
     height: 4vh;
     width: 30%;
@@ -160,25 +167,28 @@ input{
     border-radius: 14px;
     text-align: center;
 }
-.cotizar{
+.caja .cotizar{
     display: flex;
     justify-content: center;
     color: #F7F7F7;
     margin-bottom: 4vh;
 }
-.btn-cotizar{
+.caja .btn-cotizar{
     display: flex;
     justify-content: center;
     border-radius: 14px;
     width: 6vw;
 }
-.btn-cotizar:hover{
+.caja .btn-cotizar:hover{
     background-color: var(--color-principal);
     color: white;
 }
-/* ----------------------------FIN FORMULARIO--------------------- */
 
+
+/* ----------------------------FIN FORMULARIO--------------------- */
 /* ----------------------------NUESTROS DESTINOSS--------------------- */
+
+
 .seccion2{
     display: flex;
     flex-direction: column;
@@ -191,7 +201,6 @@ input{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--color-secundario);
     width: 15vw;
     height: 8vh;
     border-radius: 14px;
@@ -200,23 +209,18 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15vw;
-    /*     border:rgb(23, 130, 223) 3px solid;  */
-        color: rgba(255, 255, 255, 0.773);
-
+    font-size: 2vw;
+    width: 30vw;
+    color: var(--color-primario);
     }
 .contenedor{
-    /*border:yellowgreen 2px solid; SOLO PARA VER LA CAJA */
     display: flex;
     justify-content: space-around;/* para que deje espacio con los bordes */
-    /*gap: 10px;  Separa de los bordes */
     flex-wrap: wrap;/* para que se acomode al tamaño de la caja */
     gap: 10px;
 }
 .card{
-    /*border: rgb(255, 115, 0) 1px solid; SOLO PARA VER LA CAJA */
     background-color: var(--color-secundario);
-/*     padding: 10px; */
     border-radius: 20px;
     width: 250px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.408);
@@ -231,15 +235,76 @@ input{
     width: 85%;
     border-radius: 20px;
 }
+.card:hover{
+    background-color:var(--color-primario);
+    transform: translateY(-20px);
+}
 
 
 /* ----------------------------FIN NUESTROS DESTINOS--------------------- */
+/* ----------------- SUSCRIPCION AL NEWSLETTER------------------ */
+.seccion3{
+    background-color: var(--color-secundario);
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.formularioSuscripcion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formularioSuscripcion h2{
+    color: var(--color-primario);
+}
+.formularioContacto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+} 
+.inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 18px;
+}
+.inputContainer input{
+    border: var(--color-primario) 1px solid;
+    border-radius: 20px;
+    padding: 5px;
+    width: 25vw;
+}
+label{
+    color: var(--color-primario);
+}
+.btn-suscribirme{
+    width: 200px;
+    padding: 5px;
+    background-color: var(--color-terciario);
+    border-radius: 20px;
+    color: var(--color-quinto);
+    margin-bottom: 10px;
+}
+.btn-suscribirme:hover{
+    transition:1s ease-in-out;
+    background-color: var(--color-quinto);
+    color: var(--color-terciario);
+}
 
 
+/* ----------------- FIN SUSCRIPCION AL NEWSLETTER------------------ */
 /* ----------------------------FOOTER--------------------- */
+
+
+footer{
+    background-color: var(--color-primario);
+}
 .pie-pagina {
     width: 100%;
-    background-color: rgb(63, 63, 211);
+    background-color: var(--color-primario);
+    border-radius: 20px;
 }
 .pie-pagina .grupo-1 {
     width: 100%;
@@ -250,19 +315,29 @@ input{
     grid-gap: 50px;
     padding: 45px 0px;
 }
+.pie-pagina .form3 h2{
+    color:whitesmoke;
+    font-size: 20px;
+}
+.pie-pagina .form3 p{
+    color:whitesmoke;
+    font-size: 16px;
+}
 .pie-pagina .grupo-1 .box h2{
     color: #F7F7F7;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+.pie-pagina .grupo-1 .box a{
     color: #F7F7F7;
     margin-bottom: 10px;
+    display: flex;
+    text-decoration: none;
 }
-.pie-pagina .grupo-1 .box p:hover{
+.pie-pagina .grupo-1 .box a:hover{
     color:lightskyblue
 }
-.pie-pagina .grupo-1 .box .red-social i{
+.pie-pagina .grupo-1 .box .red-social a{
     display: inline-block;
     text-decoration: none;
     width: 75px;
@@ -270,18 +345,18 @@ input{
     line-height: 45px;
     color: #F7F7F7;
     margin-right: 10px;
-    background-color:rgb(63, 63, 211);
+    background-color: none;
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .box .red-social i:hover {
+.pie-pagina .grupo-1 .box .red-social a:hover {
     color:lightskyblue;
 }
 .pie-pagina .grupo-2 {
-    color:rgb(63, 63, 211);
+    color:var(--color-primario);
     padding: 15px 10px;
     text-align: center;
-    color: #F7F7F7;
+    color:var(--color-terciario);
 }
 .pie-pagina .grupo-2 small {
     font-size: 15px;
@@ -293,7 +368,11 @@ input{
         grid-gap: 30px;
         padding: 35px 0px;
     }
+    nav{
+        display: none;    
+    }
+    .btn-menu{
+        display:block;
+    }
 }
 /* ----------------------------FIN FOOTER--------------------- */
-
-

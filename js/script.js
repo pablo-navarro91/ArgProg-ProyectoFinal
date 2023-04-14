@@ -10,7 +10,7 @@ fetch("../Database/database.json")
                 <h2>${locacion.destino}</h2>
                 <p>${locacion.provincia}</p>
                 <img src=${locacion.url}/>
-                <p><strong>Precio/noche: ${locacion.precio}$</strong></p>
+                <p><strong>Precio/noche: $${locacion.precio}</strong></p>
             </div>
             `
         }
