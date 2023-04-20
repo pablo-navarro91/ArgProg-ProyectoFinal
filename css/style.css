@@ -65,8 +65,8 @@ a:hover{
     border: var(--color-principal) 2px solid;
     color: var(--color-principal);
     border-radius: 14px;
-    width: 7vw;
-    height: 4vh;
+    width: 9vw;
+    height: 5vh;
     cursor: pointer;
     transition-duration: 0.4s;
 }
@@ -79,8 +79,8 @@ a:hover{
     border: var(--color-principal) 2px solid;
     color: var(--color-principal);
     border-radius: 14px;
-    width: 7vw;
-    height: 4vh;
+    width: 9vw;
+    height: 5vh;
     cursor: pointer;
     transition-duration: 0.4s;
 }
