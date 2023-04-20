@@ -230,6 +230,7 @@ h1:hover{
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    text-align: center;
 }
 .card img{    
     width: 85%;
